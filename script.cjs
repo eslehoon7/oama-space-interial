@@ -1,0 +1,1 @@
+Promise.all([fetch('https://postimg.cc/7CTDnxJf').then(r=>r.text()), fetch('https://postimg.cc/bszbJvsY').then(r=>r.text())]).then(([t1, t2]) => { console.log("IMG1:", t1.match(/https:\/\/i\.postimg\.cc\/[^"]+/g)[0]); console.log("IMG2:", t2.match(/https:\/\/i\.postimg\.cc\/[^"]+/g)[0]); })
