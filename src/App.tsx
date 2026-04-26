@@ -105,7 +105,7 @@ export default function App() {
               alt="Luxurious Interior"
               fetchPriority="high"
               decoding="async"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-[calc(50%+15px)_center] md:object-center"
             />
             <div className="absolute inset-0 bg-black/0"></div>
           </div>
@@ -117,7 +117,7 @@ export default function App() {
             >
               <a
                 href="#gallery"
-                className="group relative -left-[10px] inline-flex items-center gap-2 border border-white/40 px-8 py-4 uppercase tracking-widest text-xs font-medium hover:bg-white/10 hover:opacity-80 transition-all duration-300 backdrop-blur-sm"
+                className="group relative inline-flex items-center gap-2 border border-white/40 px-8 py-4 uppercase tracking-widest text-xs font-medium hover:bg-white/10 hover:opacity-80 transition-all duration-300 backdrop-blur-sm"
               >
                 View Portfolio <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-6" />
               </a>
