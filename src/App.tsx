@@ -103,6 +103,8 @@ export default function App() {
             <img
               src="https://i.postimg.cc/ZnCJJxft/hompimein-imiji-1.png"
               alt="Luxurious Interior"
+              fetchPriority="high"
+              decoding="async"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/0"></div>
@@ -157,6 +159,8 @@ export default function App() {
               <img
                 src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2670&auto=format&fit=crop"
                 alt="About OAMA Interior"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
             </motion.div>
@@ -244,6 +248,8 @@ export default function App() {
                   <img
                     src={item.img}
                     alt={item.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover absolute inset-0 z-10 transform scale-110 group-hover:scale-100 transition-all duration-700 ease-in-out"
                   />
                 </div>
