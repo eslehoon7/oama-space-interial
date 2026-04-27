@@ -217,13 +217,13 @@ export default function App() {
             </a>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 lg:px-12 max-w-screen-2xl mx-auto">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-4 sm:px-6 lg:px-12 max-w-screen-2xl mx-auto">
             {[
               { img: "https://i.postimg.cc/hPX6qtKD/goyangsi-25pyeong-yaggug.png", title: "고양시 25평 약국", category: "Commercial" },
               { img: "https://i.postimg.cc/J76vgkVd/hanam-aipakeu5danji.png", title: "하남 아이파크 5단지", category: "Residential" },
-              { img: "https://i.postimg.cc/gcHk64h6/hanam-misa-gangbyeon2cha-puleujio.png", title: "하남 미사 강변2차 푸르지오", category: "Residential" },
-              { img: "https://i.postimg.cc/L5D9K6S3/incheon-yeonsugu-jeidiloyalheeo.png", title: "인천 연수구 제이디로얄헤어", category: "Commercial" },
-              { img: "https://i.postimg.cc/d18Q6jxv/seongsudong-opiseu-intelieo.png", title: "성수동 스튜디오 인테리어", category: "Commercial" },
+              { img: "https://i.postimg.cc/gcHk64h6/hanam-misa-gangbyeon2cha-puleujio.png", title: "하남 미사 강변2차\n푸르지오", category: "Residential" },
+              { img: "https://i.postimg.cc/L5D9K6S3/incheon-yeonsugu-jeidiloyalheeo.png", title: "인천 연수구\n제이디로얄헤어", category: "Commercial" },
+              { img: "https://i.postimg.cc/d18Q6jxv/seongsudong-opiseu-intelieo.png", title: "성수동 스튜디오\n인테리어", category: "Commercial" },
               { img: "https://i.postimg.cc/kgp5g4bZ/bucheon-sosayeog-daebog-yaggug-salye-1.png", title: "부천 소사역 대복약국", category: "Commercial" }
             ].map((item, index) => (
               <motion.div
@@ -255,7 +255,7 @@ export default function App() {
                 </div>
                 <div className="pt-4 pb-8 text-center">
                   <span className="text-[10px] uppercase tracking-widest text-[#888] mb-1 block">{item.category}</span>
-                  <h4 className="text-lg font-display text-[#2D2D2D] group-hover:text-[#C5A059] transition-colors">{item.title}</h4>
+                  <h4 className="text-[17px] sm:text-lg font-display text-[#2D2D2D] group-hover:text-[#C5A059] transition-colors whitespace-pre-line leading-tight">{item.title}</h4>
                 </div>
               </motion.div>
             ))}
